@@ -1,71 +1,107 @@
 .main {
-  height: auto;
-  height: 100vh;
+	height: auto;
 }
 
 .navbar {
-  background-color: #112b3c;
+	background-color: #112b3c;
 }
 
 .navList {
-  margin-bottom: 0;
-  padding: 8px 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+	margin-bottom: 0;
+	padding: 8px 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .navItem {
-  list-style: none;
-  margin-right: 42px;
-  font-size: 26px;
-  color: #fff;
+	list-style: none;
+	margin-right: 42px;
+	font-size: 26px;
+	color: #fff;
 }
 
 .navItem:nth-child(3) {
-  margin-left: -20px;
+	margin-left: -20px;
 }
 
 .navItem:first-child {
-  margin-right: auto;
-  margin-left: 2rem;
+	margin-right: auto;
+	margin-left: 2rem;
 }
 
-.text {
-  cursor: pointer;
+.h2 {
+	font-size: 18px;
 }
 
-.textA span {
-  margin-left: 8px;
-  color: #3B2A2F;
+.company-text {
+	font-size: 14px;
+	color: gray;
 }
 
-.textA2 span {
-  margin-left: 5px;
-  color: #3B2A2F;
+.all-tasks-text {
+	margin-top: -5px;
 }
 
-.textA .icon:hover {
-  color: #97BFD8;
+.btn-tasks {
+	border-radius: 5px;
+	color: #8b929f;
+	font-weight: 500;
 }
 
-.vl {
-  border-left: 2px solid #e2e2e2;
-  height: 200px;
-  margin-left: 100px;
-  /* margin-right: 750px; */
+.btn-tasks:hover {
+	background: #f2f4f7;
+	color: #000;
 }
 
-.select {
-  margin-right: 100px;
+.btn-tasks-active {
+	background: #f2f4f7;
+	color: #000;
 }
 
-.image {
-  display: block;
-  text-align: center;
+.task-content {
+	margin-top: 40px;
+	margin-bottom: 80px;
 }
 
-.image button {
-  font-size: 15px;
-  background-color: #005FBF;
+.last-item {
+	margin-left: auto;
+	align-self: flex-end;
+	align-content: flex-end;
+	margin-right: 16px;
+}
+
+.search-span {
+	border-right: none;
+	background-color: #fff;
+	color: #BABABE;
+}
+
+.search-input {
+	border-left: none;	
+}
+
+.search-input:focus {
+	box-shadow: none;	
+	border: 1px solid #CED4DA;
+	border-left: none;
+}
+
+.content p {
+	color: #a9a4a1;
+}
+
+.btn-create {
+	background-color: #005fbf;
+	color: #fff;
+}
+
+.btn-create:visited {
+	background-color: #005fbf;
+	color: #fff;
+}
+
+.sidebar {
+	height: 65vh;
+	border-right: 1px solid #e8e8e8;
 }

@@ -1,0 +1,105 @@
+.main {
+    height: auto;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: #112b3c;
+}
+
+.navList {
+    margin-bottom: 0;
+    padding: 8px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navItem {
+    list-style: none;
+    margin-right: 42px;
+    font-size: 26px;
+    color: #fff;
+}
+
+.navItem:nth-child(3) {
+    margin-left: -20px;
+}
+
+.navItem:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* Media Queries */
+@media (min-width: 480px) {
+    .header {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.bg-content {
+    width: 95%;
+    height: auto;
+    background-color: #F8F7F7;
+    margin: 0 auto;
+}
+
+.btn-head {
+    display: inline-block;
+    padding: 5px 12px;
+    font-weight: 700;
+    color: #ACB3BB;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.btn-head:hover {
+    color: #000;
+}
+
+.btn-head-active {
+    color: #000;
+    display: inline-block;
+    border-bottom: 2px solid #acacac;
+}
+
+.content {
+    width: 95%;
+    height: 500px;
+    background-color: #fff;
+    margin: auto;
+    border: 10px solid #DEE3E1;
+    border-bottom: 20px solid #DEE3E1;
+}
+
+.section-option select {
+    font-size: 12px;
+}
+
+.form-label {
+    font-size: 12px;
+}
+
+.form-select {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #b6b6b6;
+}
+
+.form-select:focus {
+    box-shadow: none;
+}
+
+.table tbody{
+    background-color: #eee;
+    text-align: center;
+}

@@ -1,0 +1,68 @@
+.modal {
+    /* position: relative; */
+    width: 590px;
+    height: 500px;
+    background-color: #fff;
+    margin: auto;
+    box-shadow: 0 0 0 10px #e0dfdf;
+    position: absolute;
+    left: 25%;
+    bottom: 10%;
+    overflow: scroll;
+    overflow-x: hidden;
+   
+}
+
+
+.modalContent h3 {
+    color: #980f1b;
+}
+
+.formLabel {
+    font-size: 14px;
+    margin-bottom: -5px !important;
+  }
+  
+  .formSelect {
+    border: none;
+    background-color: #fff;
+    border-radius: 0;
+    border-bottom: 2px solid #b6b6b6;
+    color: #7f7f7d;
+  }
+  
+  /* .formSelect:hover, */
+  .formSelect:focus,
+  .formSelect:active {
+    border-bottom: 2px solid #b6b6b6;
+    /* border: none !important; */
+    box-shadow: none;
+  }
+  
+  .spanIcon {
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #b6b6b6;
+    border-radius: 0;
+  }
+  
+  .searchIcon {
+    color: #b9b9bc;
+  }
+  
+  .searchInput {
+    font-size: 15px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #b6b6b6;
+    background-color: #fff;
+  }
+  
+  .searchInput:focus,
+  .searchInput:active {
+    /* border-bottom: 2px solid #b6b6b6; */
+    background-color: #fff;
+    /* border: none !important; */
+    border-bottom: 2px solid #b6b6b6;
+    box-shadow: none;
+  }
