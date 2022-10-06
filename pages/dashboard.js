@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "/styles/Dashboard.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faA, faBars, faBuilding, faCaretRight, faCircleInfo, faEnvelope, faMoneyBillTransfer, faSignal, faUser, faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import EDashboard from "./Edashboard";
 
 export default function Dashboard() {
   return (
@@ -16,7 +17,9 @@ export default function Dashboard() {
 
       <main className={styles.main}>
         <div className={styles.header}>
-          <FontAwesomeIcon className={styles.icon} icon={faBars} style={{ fontSize: 32, color: "white" }} />
+          <a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+            <FontAwesomeIcon className={styles.icon} icon={faBars} style={{ fontSize: 32, color: "white" }} />
+          </a>
           <div className={styles.logo}>
             <Image src="/EasyHandler_Hitam.png" alt="logo" width={50} height={50} />
           </div>
@@ -120,15 +123,30 @@ export default function Dashboard() {
             <div className={styles.app}>
               <h5>Application</h5>
               <ul>
-                <li><a href="#"><FontAwesomeIcon className={styles.icon} icon={faSignal} styles={{ fontSize: "10", color: "black" }} />Performance Review</a></li>
+                <li>
+                  <a href="#">
+                    <FontAwesomeIcon className={styles.icon} icon={faSignal} styles={{ fontSize: "10", color: "black" }} />
+                    Performance Review
+                  </a>
+                </li>
               </ul>
             </div>
 
             <div className={styles.dezhl}>
               <h5>Download EZHL</h5>
               <ul>
-                <li><a href="#"><FontAwesomeIcon className={styles.icon} icon={faA} styles={{ fontSize: "10", color: "black" }} />App Store</a></li>
-                <li><a href="#"><FontAwesomeIcon className={styles.icon} icon={faCaretRight} styles={{ fontSize: "10", color: "black" }} />Google Play</a></li>
+                <li>
+                  <a href="#">
+                    <FontAwesomeIcon className={styles.icon} icon={faA} styles={{ fontSize: "10", color: "black" }} />
+                    App Store
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <FontAwesomeIcon className={styles.icon} icon={faCaretRight} styles={{ fontSize: "10", color: "black" }} />
+                    Google Play
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -149,6 +167,13 @@ export default function Dashboard() {
         <footer>
           <div className={styles.footer}></div>
         </footer>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <EDashboard />
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+        </div>
       </main>
     </div>
   );
