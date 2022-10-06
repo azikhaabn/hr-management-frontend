@@ -58,6 +58,11 @@ margin : 0px 20px 0px 10px
 .sidebar li:hover{
   background-color: #112B3C;
   color:#fff;
+  width: 200%;
+}
+
+.sidebar a:hover{
+  color:#fff;
 }
 
 .dropdown1 li a{

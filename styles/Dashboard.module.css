@@ -4,7 +4,7 @@
 
 .main {
     background-color: #D1E0EE;
-    min-height: 250vh;
+    min-height: 100vh;
     margin: 0;
     font-family: 'Gurajada', serif;
     height: 100%;
@@ -48,241 +48,88 @@
     width: 100%;
 }
 
-.content {
-    background-color: white;
-    width: 1196px;
-    position: absolute;
-    height: 230px;
-    top: 70px;
-    display: flex;
-    margin: 5px 15px 5px 20px;
-    padding-left: 40px;
-    padding-top: 20px;
-    border-radius: 10px;
+.head-card {
+    width: 98%;
+    margin: 10px auto;
 }
 
-.contentHead h3 {
-    width: auto;
-    font-size: 20px;
-    margin-top: 0%;
-    height: 30px;
-    font-weight: bolder;
-    position: absolute;
+.img-head-card {
+    margin: -20px 0 0 0;
+    width: 15%;
 }
 
-.contentHead p {
-    font-size: 15px;
-    position: absolute;
-    left: 6%;
-    top: 0%;
-    margin-top: 50px;
-    font-weight: bold;
+.button-head {
+    margin-top: -50px;
 }
 
-.contentHead .text {
-    font-size: 15px;
-    position: absolute;
-    top: 10%;
-    font-weight: bold;
-}
-
-.buttonHead h4 {
-    font-size: 20px;
-    font-weight: bolder;
-    position: absolute;
-    top: 38%;
-    left: 3%;
-    font-weight: bold;
-}
-
-.buttonHead ul li {
+.button-head ul li {
     list-style: none;
     display: inline-block;
     width: 12em;
     height: 2.5em;
     text-align: center;
-    padding-top: 10px;
+    padding: 10px;
     background-color: #112B3C;
     color: #ffffff;
     border-radius: 20px;
-    margin: 8em 70px 0 0;
-    position: relative;
-    left: -4%;
 }
 
-.card1 {
-    position: absolute;
-    top: 56.5%;
-    left: 0.5%;
-    width: 29%;
-    height: 70%;
-    background-color: #ffffff;
-    margin:0 0 0 15px;
-    border-radius: 10px;
-}
-
-.card1 h3 {
-    font-size: 25px;
-    margin: 15px 0 30px 10px;
-}
-
-.progress {
-    width: 94%;
-    height: 3%;
-    background-color: #112B3C;
-    margin: 0 10px;
-    border-radius: 5px;
-}
-
-.progress1 {
-    text-align: right;
-    padding-top: 2px;
-    padding-bottom: 2px;
-}
-
-.card2 {
-    position: absolute;
-    top: 128%;
-    left: 0.5%;
-    width: 29%;
-    height: 70%;
-    background-color: #ffffff;
-    margin:0 0 0 15px;
-    border-radius: 10px;
-}
-
-.card2 h3 {
-    font-size: 25px;
-    margin: 15px 0 30px 10px;
-}
-
-.card3 {
-    width: 450px;
-    height: 120px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    position: absolute;
-    right: 40%;
-    top: 59%;
-    left: 32%;
-}
-
-.card3 ul {
-    text-decoration: underline;
-    margin: 10px 0 0 -10px;
-}
-
-.card3 ul li{
-    list-style: none;
-    display: inline-block;
-    font-size: 12px;
-    padding: 5px;
-    margin: 0 25px 0 0;
-    border-radius: 5px;
-}
-
-.card3 ul li:hover{
-    text-align: center;
-    background-color: #112B3C;
+.button-head a:hover {
     color: #ffffff;
 }
 
-.card4 {
-    width: 450px;
-    height: 140px;
-    background-color: #ffffff;
+/* CARD ROW ONE */
+.card-row-one {
+    width: 30%;
+}
+
+.progress-bar {
+    height: 10px;
     border-radius: 10px;
-    position: absolute;
-    right: 40%;
-    top: 82%;
-    left: 32%;
+}
+.progress1 {
+    width: 50%;
+    background-color: #204684;
+}
+.progress2 {
+    width: 35%;
+    background-color: #EC3237;
+}
+.progress3 {
+    width: 15%;
+    background-color: #EBC5B4;
 }
 
-.card5 {
-    width: 450px;
-    height: 170px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    position: absolute;
-    right: 40%;
-    top: 108.7%;
-    left: 32%;
+
+/* CARD ROW TWO */
+.card-row-two {
+    width: 38%;
 }
 
-.card6 {
-    width: 450px;
-    height: 170px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    position: absolute;
-    right: 40%;
-    top: 140.8%;
-    left: 32%;
+.card-1-header {
+    background-color: #fff;
 }
 
-.card7 {
-    width: 450px;
-    height: 170px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    position: absolute;
-    right: 40%;
-    top: 172.8%;
-    left: 32%;
-}
-
-.quickl h5 {
-    text-decoration: underline;
-    margin-left: 20px;
-    margin-top: 12px;
-}
-
-.quickl ul {
-    margin-top: -10px;
-}
-
-.quickl ul li {
+.card-1-header ul li {
     list-style: none;
+    display: inline-block;
+}
+
+.card-3-body h5 {
+    font-size: 15px;
+}
+
+.card-3-body ul li {
+    list-style: none;
+    margin-left: -30px;
+}
+
+.card-3-body a {
     font-size: 12px;
-    margin: 10px 0 5px -25px;
 }
 
-.app {
-    margin: -132px 0 0 145px;
-}
 
-.dezhl {
-    margin: -58px 0 0 310px;
-}
-
-.card8 {
-    position: absolute;
-    left: 69%;
-    top: 56.5%;
-    width: 29%;
-    height: 70%;
-    background-color: #ffffff;
-    margin: 0 0 0 15px;
-    border-radius: 10px;
-}
-
-.card8 h3 {
-    font-size: 25px;
-    margin: 15px 0 30px 10px;
-}
-
-.card9 {
-    position: absolute;
-    top: 128%;
-    left: 69%;
-    width: 29%;
-    height: 70%;
-    background-color: #ffffff;
-    margin: 0 0 0 15px;
-    border-radius: 10px;
-}
-
-.card9 h3 {
-    font-size: 25px;
-    margin: 15px 0 30px 10px;
+/* CARD ROW THREE */
+.card-row-three {
+    width: 30%;
 }

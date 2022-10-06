@@ -45,7 +45,8 @@
 .text-img {
   position: absolute;
   z-index: 1;
-  margin: 110px 0 0 15px;
+  bottom: 40px;
+  left: 30px;
   color: #fff;
   font-size: 15px;
   cursor: pointer;
@@ -57,7 +58,6 @@
 
 .container {
   position: relative;
-  width: 50%;
 }
 
 .overlay {
@@ -71,9 +71,9 @@
   opacity: 0;
   cursor: pointer;
   transition: 0.2s ease;
-  background-color: #66000B;
+  background-color: #66000b;
 }
 
-.container:hover .overlay{
+.container:hover .overlay {
   opacity: 1;
 }

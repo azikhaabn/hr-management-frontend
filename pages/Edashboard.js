@@ -3,9 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "/styles/Edashboard.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faBuilding, faCalendarDays, faEnvelope, faHome, faMoneyBillTransfer, faPallet, faUser } from "@fortawesome/free-solid-svg-icons";
-import Dashboard from './dashboard';
-
+import { faBuilding, faCalendarDays, faHome, faMoneyBillTransfer, faUser } from "@fortawesome/free-solid-svg-icons";
 
 export default function EDashboard() {
 
@@ -17,7 +15,7 @@ export default function EDashboard() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className={`${styles.main}`}>
         <div className={styles.sidebar}>
         <li><FontAwesomeIcon
         className={styles.icon3}
