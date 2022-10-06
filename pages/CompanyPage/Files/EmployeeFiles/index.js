@@ -40,9 +40,9 @@ export default function CompanyFiles() {
         </nav>
 
         <img src="/files.png" className={styles.image}></img>
-        <a type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalFiles">
+        {/* <a type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#modalFiles">
           Employee files
-        </a>
+        </a> */}
 
         <main className={styles.mainContent}>
           <div className={`${styles["bg-content"]} mt-5`}>
