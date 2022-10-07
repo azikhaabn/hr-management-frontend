@@ -46,139 +46,166 @@ const CompanyRelational = () => {
 							<div className={`${styles["relational-img"]}`}>
 								<div className={`row my-2`}>
 									<Link
+										href="/CompanyPage/Assets/EmployeeAssets"
 										className={`${styles["link-img"]}`}
-										href="/Assets/EmployeeAssets"
 									>
-										<div className={`${styles["container"]} col`}>
+										<div className={`${styles["container"]} col ms-2`}>
 											<a className={`${styles["text-img"]}`}>Assets</a>
-											<Image
-												className={`${styles["row-img"]} img-fluid`}
-												src="/asset-img.png"
-												width={500}
-												height={300}
-											/>
+											<div style={{ width: "100px", height: "180px" }}>
+												<Image
+													className={`${styles["row-img"]} img-fluid`}
+													src="/asset-img.png"
+													layout="fill"
+												/>
+											</div>
 											<div className={styles.overlay}></div>
 										</div>
 									</Link>
-									<Link href="/Reprimand/ReprimandList">
-										<div className={`${styles["container"]} col`}>
+									<Link href="/CompanyPage/Reprimand/ReprimandList">
+										<div className={`${styles["container"]} col ms-2`}>
 											<a className={`${styles["text-img"]}`}>Reprimand</a>
-											<Image
-												className={`${styles["row-img"]} img-fluid`}
-												src="/reprimand-img.png"
-												width={500}
-												height={300}
-											/>
+											<div style={{ width: "100px", height: "180px" }}>
+												<Image
+													className={`${styles["row-img"]} img-fluid`}
+													src="/reprimand-img.png"
+													layout="fill"
+												/>
+											</div>
 											<div className={styles.overlay}></div>
 										</div>
 									</Link>
 									<Link href="/CompanyPage/Task/AllTask">
-										<div className={`${styles["container"]} col`}>
+										<div className={`${styles["container"]} col ms-2`}>
 											<a className={`${styles["text-img"]}`}>Task</a>
-											<Image
-												className={`${styles["row-img"]} img-fluid`}
-												src="/task-img.png"
-												width={500}
-												height={300}
-											/>
+											<div style={{ width: "100px", height: "180px" }}>
+												<Image
+													className={`${styles["row-img"]} img-fluid`}
+													src="/task-img.png"
+													layout="fill"
+												/>
+											</div>
 											<div className={styles.overlay}></div>
 										</div>
 									</Link>
-									<Link href="/Announcement">
-										<div className={`${styles["container"]} col`}>
+									<Link href="/CompanyPage/Announcement">
+										<div className={`${styles["container"]} col ms-2 me-2`}>
 											<a className={`${styles["text-img"]}`}>Announcement</a>
-											<Image
-												className={`${styles["row-img"]} img-fluid`}
-												src="/announce-img.png"
-												width={500}
-												height={300}
-											/>
+											<div style={{ width: "100px", height: "180px" }}>
+												<Image
+													className={`${styles["row-img"]} img-fluid`}
+													src="/announce-img.png"
+													layout="fill"
+												/>
+											</div>
 											<div className={styles.overlay}></div>
 										</div>
 									</Link>
 								</div>
 								<div className={`row my-2`}>
 									<Link href="/CompanyPage/UserActivityLog">
-										<div className={`${styles["container"]} col`}>
+										<div className={`${styles["container"]} col ms-2`}>
 											<a className={`${styles["text-img"]}`}>User Activity Log</a>
-											<Image
-												className={`${styles["row-img"]} img-fluid`}
-												src="/user-activity-log-img.png"
-												width={500}
-												height={300}
-											/>
+											<div style={{ width: "100px", height: "180px" }}>
+												<Image
+													className={`${styles["row-img"]} img-fluid`}
+													src="/user-activity-log-img.png"
+													layout="fill"
+												/>
+											</div>
 											<div className={styles.overlay}></div>
 										</div>
 									</Link>
 									<Link href="/CompanyPage/Notification">
-										<div className={`${styles["container"]} col`}>
+										<div className={`${styles["container"]} col ms-2`}>
 											<a className={`${styles["text-img"]}`}>Notification</a>
-											<Image
-												className={`${styles["row-img"]} img-fluid`}
-												src="/notification-img.png"
-												width={500}
-												height={300}
-											/>
+											<div style={{ width: "100px", height: "180px" }}>
+												<Image
+													className={`${styles["row-img"]} img-fluid`}
+													src="/notification-img.png"
+													layout="fill"
+												/>
+											</div>
 											<div className={styles.overlay}></div>
 										</div>
 									</Link>
 									<Link href="/CompanyPage/Onboarding/OnProgress">
-										<div className={`${styles["container"]} col`}>
+										<div className={`${styles["container"]} col ms-2`}>
 											<a className={`${styles["text-img"]}`}>Onboarding</a>
-											<Image
-												className={`${styles["row-img"]} img-fluid`}
-												src="/onboarding-img.png"
-												width={500}
-												height={300}
-											/>
+											<div style={{ width: "100px", height: "180px" }}>
+												<Image
+													className={`${styles["row-img"]} img-fluid`}
+													src="/onboarding-img.png"
+													layout="fill"
+												/>
+											</div>
 											<div className={styles.overlay}></div>
 										</div>
 									</Link>
 									<Link href="/CompanyPage/Files/CompanyFiles">
-										<div className={`${styles["container"]} col`}>
+										<div className={`${styles["container"]} col ms-2 me-2`}>
 											<a className={`${styles["text-img"]}`}>Files</a>
-											<Image
-												className={`${styles["row-img"]} img-fluid`}
-												src="/files-img.png"
-												width={500}
-												height={300}
-											/>
+											<div style={{ width: "100px", height: "180px" }}>
+												<Image
+													className={`${styles["row-img"]} img-fluid`}
+													src="/files-img.png"
+													layout="fill"
+												/>
+											</div>
 											<div className={styles.overlay}></div>
 										</div>
 									</Link>
 								</div>
 								<div className={`row my-2`}>
-									<Link href="/CompanyPage/Polling/Active">
-										<div className={`col-3`}>
-											<a className={`${styles["text-img"]}`}>Polling</a>
-											<Image
-												className={`${styles["row-img"]} img-fluid`}
-												src="/polling-img.png"
-												width={500}
-												height={300}
-											/>
+									<Link href="/CompanyPage/Notification">
+										<div className={`${styles["container"]} col ms-2`}>
+											<a className={`${styles["text-img"]}`}>Notification</a>
+											<div style={{ width: "100px", height: "180px" }}>
+												<Image
+													className={`${styles["row-img"]} img-fluid`}
+													src="/notification-img.png"
+													layout="fill"
+												/>
+											</div>
+											<div className={styles.overlay}></div>
 										</div>
 									</Link>
-									<Link href="/CompanyPage/DocumentTemplate">
-										<div className={`col-3`}>
-											<a className={`${styles["text-img"]}`}>Document Template</a>
-											<Image
-												className={`${styles["row-img"]} img-fluid`}
-												src="/document-template-img.png"
-												width={500}
-												height={300}
-											/>
+									<Link href="/CompanyPage/Onboarding/OnProgress">
+										<div className={`${styles["container"]} col ms-2`}>
+											<a className={`${styles["text-img"]}`}>Onboarding</a>
+											<div style={{ width: "100px", height: "180px" }}>
+												<Image
+													className={`${styles["row-img"]} img-fluid`}
+													src="/onboarding-img.png"
+													layout="fill"
+												/>
+											</div>
+											<div className={styles.overlay}></div>
 										</div>
 									</Link>
-									<Link href="/CompanyPage/ReportBuilder">
-										<div className={`col-3`}>
-											<a className={`${styles["text-img"]}`}>Report Builder</a>
-											<Image
-												className={`${styles["row-img"]} img-fluid`}
-												src="/report-builder-img.png"
-												width={500}
-												height={300}
-											/>
+									<Link href="/CompanyPage/Onboarding/OnProgress">
+										<div className={`${styles["container"]} col ms-2`}>
+											<a className={`${styles["text-img"]}`}>Onboarding</a>
+											<div style={{ width: "100px", height: "180px" }}>
+												<Image
+													className={`${styles["row-img"]} img-fluid`}
+													src="/onboarding-img.png"
+													layout="fill"
+												/>
+											</div>
+											<div className={styles.overlay}></div>
+										</div>
+									</Link>
+									<Link href="/CompanyPage/Files/CompanyFiles">
+										<div className={`${styles["container"]} col ms-2 me-2`}>
+											<a className={`${styles["text-img"]}`}>Files</a>
+											<div style={{ width: "100px", height: "180px" }}>
+												<Image
+													className={`${styles["row-img"]} img-fluid`}
+													src="/files-img.png"
+													layout="fill"
+												/>
+											</div>
+											<div className={styles.overlay}></div>
 										</div>
 									</Link>
 								</div>
