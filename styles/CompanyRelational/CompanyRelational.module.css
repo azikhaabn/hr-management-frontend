@@ -45,8 +45,8 @@
 .text-img {
 	position: absolute;
 	z-index: 1;
-	bottom: 40px;
-	left: 30px;
+	bottom: 20px;
+	left: 20px;
 	color: #fff;
 	font-size: 15px;
 	cursor: pointer;
@@ -57,8 +57,9 @@
 }
 
 .container {
-	position: relative;
+  position: relative;
 }
+
 
 .overlay {
 	position: absolute;

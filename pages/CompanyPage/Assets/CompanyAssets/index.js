@@ -1,11 +1,8 @@
 import React, { Component, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "/styles/Company/CompanyPage.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	faEnvelope,
-	faUser,
 	faXmark,
 	faPenToSquare,
 	faMagnifyingGlass,
@@ -15,6 +12,7 @@ import {
 import DeleteModalCompany from "./deleteModalCompany";
 import EditModalCompany from "./editModalCompany";
 import AddModalCompany from "./addModalCompany";
+import Navbar from "../../../Component/navbar";
 import { useRouter } from "next/router";
 
 export default function CompanyAssets() {
@@ -24,25 +22,7 @@ export default function CompanyAssets() {
 	return (
 		<div className={styles.body}>
 			<main className={styles.main} id="main">
-				<nav className={styles.navbar}>
-					<ul className={styles.navList}>
-						<li className={styles.navItem}>
-							<Image
-								className={styles.imageLogo}
-								src="/EasyHandler_Hitam.png"
-								alt="logo"
-								width={42}
-								height={42}
-							/>
-						</li>
-						<li className={styles.navItem}>
-							<FontAwesomeIcon className={`${styles.navIcon}`} icon={faEnvelope} />
-						</li>
-						<li className={styles.navItem}>
-							<FontAwesomeIcon className={`${styles.navIcon}`} icon={faUser} />
-						</li>
-					</ul>
-				</nav>
+				<Navbar />
 
 				<img src="/image497.png" className={styles.image}></img>
 
@@ -54,8 +34,8 @@ export default function CompanyAssets() {
 									<div
 										className={
 											currentRoute === "/CompanyPage/Assets/EmployeeAssets"
-												? `${styles.toggleAssets} ${styles.active} col-6 btn py-4`
-												: `${styles.toggleAssets} col-6 btn py-4`
+												? `${styles.toggleAssets} ${styles.active} col-6 py-4`
+												: `${styles.toggleAssets} col-6 py-4`
 										}
 									>
 										<a>Employee Assets</a>
@@ -66,8 +46,8 @@ export default function CompanyAssets() {
 									<div
 										className={
 											currentRoute === "/CompanyPage/Assets/CompanyAssets"
-												? `${styles.toggleAssets} ${styles.active} col-6 btn py-4`
-												: `${styles.toggleAssets} col-6 btn py-4`
+												? `${styles.toggleAssets} ${styles.active} col-6 py-4`
+												: `${styles.toggleAssets} col-6 py-4`
 										}
 									>
 										<a>Company Assets</a>

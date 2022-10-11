@@ -1,27 +1,15 @@
 import React, { useMemo } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "/styles/Notification/Notification.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faUser, faMagnifyingGlass, faCaretUp, faCaretDown, faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass, faCaretUp, faCaretDown, faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import Navbar from "../../Component/navbar";
 
 export default function Notification() {
   return (
     <div className={styles.body}>
       <main className={styles.main} id="main">
-        <nav className={styles.navbar}>
-          <ul className={styles.navList}>
-            <li className={styles.navItem}>
-              <Image className={styles.imageLogo} src="/EasyHandler_Hitam.png" alt="logo" width={42} height={42} />
-            </li>
-            <li className={styles.navItem}>
-              <FontAwesomeIcon className={`${styles.navIcon}`} icon={faEnvelope} />
-            </li>
-            <li className={styles.navItem}>
-              <FontAwesomeIcon className={`${styles.navIcon}`} icon={faUser} />
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
 
         <main className={`${styles["content"]}`}>
           <div className={`styles["bg-content"] mt-5`}>

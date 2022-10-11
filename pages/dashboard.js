@@ -6,18 +6,15 @@ import styles from "/styles/Dashboard.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faA,
-	faBars,
 	faBuilding,
 	faCaretRight,
 	faCircleInfo,
-	faEnvelope,
 	faMoneyBillTransfer,
 	faSignal,
-	faUser,
 	faUserPlus,
 	faEllipsisVertical,
 } from "@fortawesome/free-solid-svg-icons";
-import EDashboard from "./Edashboard";
+import Navbar from "./Component/navbar"
 
 export default function Dashboard() {
 	return (
@@ -29,36 +26,7 @@ export default function Dashboard() {
 			</Head>
 
 			<main className={styles.main}>
-				<div className={styles.header}>
-					<a
-						type="button"
-						data-bs-toggle="offcanvas"
-						data-bs-target="#offcanvasScrolling"
-						aria-controls="offcanvasScrolling"
-					>
-						<FontAwesomeIcon
-							className={styles.icon}
-							icon={faBars}
-							style={{ fontSize: 32, color: "white" }}
-						/>
-					</a>
-					<div className={styles.logo}>
-						<Image src="/EasyHandler_Hitam.png" alt="logo" width={50} height={50} />
-					</div>
-					<div className={styles.headerRight}>
-						<FontAwesomeIcon
-							className={styles.icon2}
-							icon={faEnvelope}
-							style={{ fontSize: 29, color: "white" }}
-						/>
-						<FontAwesomeIcon
-							className={styles.icon2}
-							icon={faUser}
-							style={{ fontSize: 29, color: "white" }}
-						/>
-					</div>
-				</div>
-
+				<Navbar />
 				<div className={`${styles.container}`}>
 					<div className={`${styles["head-card"]} card`}>
 						<div className={`${styles["head-card-body"]} card-body`}>
@@ -71,7 +39,7 @@ export default function Dashboard() {
 									</div>
 								</div>
 								<img
-									src="/crerical-staff.png"
+									src="/clerical-staff.png"
 									className={`${styles["img-head-card"]} me-5`}
 								/>
 							</div>
@@ -391,28 +359,6 @@ export default function Dashboard() {
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-
-				<footer>
-					<div className={styles.footer}></div>
-				</footer>
-
-				<div
-					className={`${styles["canvas"]} offcanvas offcanvas-start`}
-					data-bs-scroll="true"
-					data-bs-backdrop="false"
-					tabindex="-1"
-					id="offcanvasScrolling"
-					aria-labelledby="offcanvasScrollingLabel"
-				>
-					<div className={`${styles["canvas-header"]} offcanvas-header`}>
-						<EDashboard />
-						<button
-							class="btn-close"
-							data-bs-dismiss="offcanvas"
-							aria-label="Close"
-						></button>
 					</div>
 				</div>
 			</main>

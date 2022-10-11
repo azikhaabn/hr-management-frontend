@@ -5,34 +5,6 @@
   height: 100vh;
 }
 
-.navbar {
-  background-color: #112b3c;
-}
-
-.navList {
-  margin-bottom: 0;
-  padding: 8px 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.navItem {
-  list-style: none;
-  margin-right: 42px;
-  font-size: 26px;
-  color: #fff;
-}
-
-.navItem:nth-child(3) {
-  margin-left: -20px;
-}
-
-.navItem:first-child {
-  margin-right: auto;
-  margin-left: 2rem;
-}
-
 .image {
   width: 100%;
   height: auto;
@@ -89,6 +61,7 @@
   color: #979da6;
   background: #dee3e1;
   border: none;
+  cursor: pointer;
 }
 
 .active {
@@ -144,6 +117,7 @@
 .formSelect:active {
   border-bottom: 2px solid #b6b6b6;
   /* border: none !important; */
+  /* border: none !important; */
   box-shadow: none;
 }
 
@@ -193,7 +167,8 @@
 } */
 
 /* .contentTable {
-	position: fixed;
+	overflow: scroll;
+  padding: 10px;
 } */
 
 .rowPaginate {
