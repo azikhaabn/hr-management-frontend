@@ -1,15 +1,15 @@
 import React, { Component, useMemo, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "/styles/Files/Cfiles.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faUser, faAngleLeft, faAngleRight, faMagnifyingGlass, faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft, faAngleRight, faMagnifyingGlass, faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
 import { COLUMNS } from "./columns";
 import FILES from "../Files.json";
 import InputFilter from "./InputFilter";
 import { useGlobalFilter, usePagination, useTable } from "react-table";        
 import AddFiles from "./addFiles";
+import Navbar from "../../../Component/navbar";
 
 export default function CompanyFiles() {
   const columns = useMemo(() => COLUMNS, []);
@@ -25,19 +25,7 @@ export default function CompanyFiles() {
   return (
     <div className={styles.body}>
       <main className={styles.main} id="main">
-        <nav className={styles.navbar}>
-          <ul className={styles.navList}>
-            <li className={styles.navItem}>
-              <Image className={styles.imageLogo} src="/EasyHandler_Hitam.png" alt="logo" width={42} height={42} />
-            </li>
-            <li className={styles.navItem}>
-              <FontAwesomeIcon className={`${styles.navIcon}`} icon={faEnvelope} />
-            </li>
-            <li className={styles.navItem}>
-              <FontAwesomeIcon className={`${styles.navIcon}`} icon={faUser} />
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
 
         <img src="/files.png" className={styles.image}></img>
 

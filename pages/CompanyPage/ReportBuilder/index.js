@@ -1,27 +1,13 @@
 import React, { Component, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "/styles/ReportBuilder/Rbuilder.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
+import Navbar from "../../Component/navbar";
 
 const ReportBuilder = () => {
   return (
     <div className={styles.body}>
       <main className={styles.main} id="main">
-        <nav className={`${styles.navbar}`}>
-          <ul className={styles.navList}>
-            <li className={styles.navItem}>
-              <Image className={styles.imageLogo} src="/EasyHandler_Hitam.png" alt="logo" width={42} height={42} />
-            </li>
-            <li className={styles.navItem}>
-              <FontAwesomeIcon className={`${styles.navIcon}`} icon={faEnvelope} />
-            </li>
-            <li className={styles.navItem}>
-              <FontAwesomeIcon className={`${styles.navIcon}`} icon={faUser} />
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
 
         <main className={styles.mainContent}>
           <div>

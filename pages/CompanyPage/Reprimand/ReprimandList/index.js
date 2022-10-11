@@ -1,13 +1,8 @@
 import React, { Component, useMemo, useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import styles from "/styles/Reprimand/ReprimandList.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBars,
-  faEnvelope,
-  faUser,
   faMagnifyingGlass,
   faAngleRight,
   faAngleLeft,
@@ -16,6 +11,7 @@ import { useRouter } from "next/router";
 import { COLUMNS } from "./columns";
 import MOCK_DATA from "./MOCK_DATA.json";
 import { useGlobalFilter, useTable, usePagination } from "react-table";
+import Navbar from "../../../Component/navbar";
 import AddNew from "./AddNew";
 import Filter from "./Filter";
 
@@ -46,29 +42,7 @@ export default function ReprimandList() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <div className={styles.header}>
-          <FontAwesomeIcon
-            className={styles.icon}
-            icon={faBars}
-            style={{ fontSize: 32, color: "white" }}
-          />
-          <div className={styles.logo}>
-            <Image
-              src="/EasyHandler_Hitam.png"
-              alt="logo"
-              width={50}
-              height={50}
-            />
-          </div>
-          <div className={styles.headerRight}>
-            <FontAwesomeIcon
-              className={styles.icon2}
-              icon={faEnvelope}
-              style={{ fontSize: 29, color: "white" }}
-            />
-            <Image src="/Group_3.png" alt="logo" width={40} height={40} />
-          </div>
-        </div>
+        <Navbar />
         <div className={styles.image}>
           <img src="/image_535.png" className={styles.image}></img>
         </div>

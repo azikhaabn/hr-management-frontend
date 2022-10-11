@@ -1,43 +1,13 @@
 import React from "react";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import styles from "/styles/Announcement/announcementList.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faEnvelope,
-  faUser,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
 import AddNew from "./AddNew";
+import Navbar from "../../Component/navbar"
 
 export default function announcement() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <div className={styles.header}>
-          <FontAwesomeIcon
-            className={styles.icon}
-            icon={faBars}
-            style={{ fontSize: 32, color: "white" }}
-          />
-          <div className={styles.logo}>
-            <Image
-              src="/EasyHandler_Hitam.png"
-              alt="logo"
-              width={50}
-              height={50}
-            />
-          </div>
-          <div className={styles.headerRight}>
-            <FontAwesomeIcon
-              className={styles.icon2}
-              icon={faEnvelope}
-              style={{ fontSize: 29, color: "white" }}
-            />
-          </div>
-        </div>
+        <Navbar />
         <div className={styles.image}>
           <img src="/image_618.png" className={styles.image}></img>
         </div>

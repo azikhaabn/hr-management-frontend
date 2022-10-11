@@ -2,31 +2,8 @@
 	margin-top: 5px;
 }
 
-.headerRight {
-	float: right;
-	line-height: 26px;
-	position: absolute;
-	top: 2.7%;
-	right: 10px;
-}
-
-.icon {
-	margin: 0px 20px 0px 20px;
-}
-.icon:hover {
-	cursor: pointer;
-}
-
-.icon2 {
-	margin: 0px 20px 0px 10px;
-}
-
 .icon3 {
 	margin: 0px 3px 3px 0px;
-}
-.icon3:hover {
-	cursor: pointer;
-	position: absolute;
 }
 
 .sidebar {
@@ -58,7 +35,7 @@
 .sidebar li:hover {
 	background-color: #112b3c;
 	color: #fff;
-	width: 200%;
+	width: 150%;
 }
 
 .sidebar a:hover {
@@ -92,15 +69,5 @@
 	min-height: 200vh;
 	background-color: rgba(0, 0, 0, 0.3);
 	/* display: none;  */
-	z-index: 1;
-}
-
-.footer {
-	background-color: #112b3c;
-	height: 40px;
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	width: 100%;
 	z-index: 1;
 }
