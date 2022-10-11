@@ -168,6 +168,9 @@ const CompanyRelational = () => {
 											</div>
 											<div className={styles.overlay}></div>
 										</div>
+									</Link>
+									<Link href="/CompanyPage/Files/CompanyFiles">
+
 									</Link> */}
 									<Link href="/CompanyPage/ReportBuilder">
 										<div className={`${styles["container"]} col ms-2 me-2`}>
