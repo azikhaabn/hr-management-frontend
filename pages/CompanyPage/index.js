@@ -14,7 +14,7 @@ const CompanyRelational = () => {
 					{/* <div className=> */}
 					<section className="container text-center">
 						<h1 className="d-inline-block mt-3 mb-4">Company Relational</h1>
-						<h2 className="text-uppercase">PT. Zegen Solusi Mandiri</h2>
+						<h2 className="text-uppercase">PT Zegen Solusi Mandiri</h2>
 
 						<div className={`${styles["bg-content"]} row my-2`}>
 							<div className={`${styles["relational-img"]}`}>
