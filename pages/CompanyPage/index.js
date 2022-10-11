@@ -182,19 +182,6 @@ const CompanyRelational = () => {
 											<div className={styles.overlay}></div>
 										</div>
 									</Link>
-									<Link href="/CompanyPage/Onboarding/OnProgress">
-										<div className={`${styles["container"]} col ms-2`}>
-											<a className={`${styles["text-img"]}`}>Onboarding</a>
-											<div style={{ width: "100px", height: "180px" }}>
-												<Image
-													className={`${styles["row-img"]} img-fluid`}
-													src="/onboarding-img.png"
-													layout="fill"
-												/>
-											</div>
-											<div className={styles.overlay}></div>
-										</div>
-									</Link>
 									<Link href="/CompanyPage/Files/CompanyFiles">
 										<div className={`${styles["container"]} col ms-2 me-2`}>
 											<a className={`${styles["text-img"]}`}>Files</a>
