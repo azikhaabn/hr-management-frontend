@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "/styles/Files/Cfiles.module.css";
+import styles from "/styles/CompanyPage/Files/Cfiles.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 

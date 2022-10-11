@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "/styles/Files/EditFiles.module.css";
+import styles from "/styles/CompanyPage/Files/EditFiles.module.css";
 
 const AddFiles = () => {
   return (

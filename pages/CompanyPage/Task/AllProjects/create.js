@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "/styles/Task/CreateNew.module.css";
+import styles from "/styles/CompanyPage/Task/CreateNew.module.css";
 
 export default function CreateProject() {
   return (

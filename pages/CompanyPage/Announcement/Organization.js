@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import styles from "/styles/Announcement/organization.module.css";
+import styles from "/styles/CompanyPage/Announcement/organization.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
@@ -76,6 +76,12 @@ const Organization = ({ closeModal }) => {
           </div>
         </div>
       </main>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"
+      ></script>
     </div>
   );
 };

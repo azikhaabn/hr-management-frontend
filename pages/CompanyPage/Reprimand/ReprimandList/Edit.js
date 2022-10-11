@@ -1,6 +1,5 @@
 import React from "react";
-import Head from "next/head";
-import styles from "/styles/AddNewReprimand.module.css";
+import styles from "/styles/CompanyPage/AddNewReprimand.module.css";
 
 const Edit = ({ closeModal }) => {
   return (

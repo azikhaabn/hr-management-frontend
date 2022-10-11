@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import Link from "next/link";
-import styles from "/styles/ReportBuilder/Rbuilder.module.css";
+import styles from "/styles/CompanyPage/ReportBuilder/Rbuilder.module.css";
 import Navbar from "../../Component/navbar";
 
 const ReportBuilder = () => {

@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import Link from "next/link";
-import styles from "/styles/UserActivityLog/UactivityLog.module.css";
+import styles from "/styles/CompanyPage/UserActivityLog/UactivityLog.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faPenToSquare, faXmark, faCaretUp, faCaretDown, faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { COLUMNS } from "./columns";

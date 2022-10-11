@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import styles from "/styles/Files/ModalFiles.module.css";
+import styles from "/styles/CompanyPage/Files/ModalFiles.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faAngleLeft, faAngleRight, faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
 

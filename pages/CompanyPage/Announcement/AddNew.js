@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useState, Component } from "react";
-import styles from "/styles/Announcement/AddNew.module.css";
+import React, { useEffect, useRef, useState } from "react";
+import Head from "next/head";
+import styles from "/styles/CompanyPage/Announcement/AddNew.module.css";
 import Organization from "./Organization";
 
 const AddNewAnnouncement = ({ closeModal, name, value }) => {
@@ -16,6 +17,7 @@ const AddNewAnnouncement = ({ closeModal, name, value }) => {
   }, []);
   return (
     <div className={styles.container}>
+
       <main className={styles.main}>
         <div className={`${styles.modal} modal-content rounded-0`}>
           <div
@@ -121,6 +123,12 @@ const AddNewAnnouncement = ({ closeModal, name, value }) => {
           </div>
         </div>
       </main>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"
+      ></script>
     </div>
   );
 };

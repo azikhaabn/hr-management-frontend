@@ -10,6 +10,10 @@
 	height: 100%;
 }
 
+.icon {
+	margin-right: 10px;
+}
+
 .head-card {
 	width: 98%;
 	margin: 10px auto;
@@ -74,6 +78,14 @@
 .card-1-header ul li {
 	list-style: none;
 	display: inline-block;
+	cursor: pointer;
+}
+
+.card-1-header ul li:hover {
+	background-color: #112b3c;
+	color: #fff;
+	/* padding: 5px;
+	border-radius: 10px; */
 }
 
 .card-3-body h5 {
@@ -87,6 +99,10 @@
 
 .card-3-body a {
 	font-size: 12px;
+}
+
+.card-3-body a:hover {
+	color: #000;
 }
 
 /* CARD ROW THREE */

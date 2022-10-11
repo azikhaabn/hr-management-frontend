@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "/styles/Polling/CreatePolls.module.css";
+import styles from "/styles/CompanyPage/Polling/CreatePolls.module.css";
 
 const CreateNewPoll = () => {
   return (
@@ -69,7 +69,7 @@ const CreateNewPoll = () => {
         </div>
 
         <div className={`${styles["footer"]} modal-footer border-top mb-2`}>
-          <button type="button" className={`${styles["btn-create"]} btn btn-outline-secondary mt-2 me-2 btn-sm`} data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <button type="button" className={`${styles["btn-create"]} btn btn-outline-secondary mt-2 me-2 btn-sm`} data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
             SAVE
           </button>
           <button type="button" className={`${styles["btn-create"]} btn btn-outline-secondary mt-2 me-1 btn-sm`} data-bs-dismiss="modal">

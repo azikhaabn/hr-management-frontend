@@ -1,6 +1,7 @@
 import React, { Component, useMemo, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import styles from "/styles//Reprimand/ReprimandType.module.css";
+import styles from "/styles/CompanyPage/Reprimand/ReprimandType.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
@@ -46,9 +47,31 @@ export default function ReprimandType() {
           <img src="/image_535.png" className={styles.image}></img>
         </div>
         <div className={styles.box}>
-          <div className={styles.link}>
-            <a href="/CompanyPage/Reprimand/ReprimandList">Reprimand List</a>
-            <a href="/CompanyPage/Reprimand/ReprimandType">Reprimand Type</a>
+          <div className={`${styles["main-toggle"]}`}>
+            <section class="section-link-assets">
+              <Link href="./ReprimandList">
+                <div
+                  className={
+                    currentRoute === "/CompanyPage/Reprimand/ReprimandList"
+                      ? `${styles["btn-head"]} ${styles["btn-head-active"]}`
+                      : `${styles["btn-head"]}`
+                  }
+                >
+                  <a>Reprimand List</a>
+                </div>
+              </Link>
+              <Link href="./ReprimandType">
+                <div
+                  className={
+                    currentRoute === "/CompanyPage/Reprimand/ReprimandType"
+                      ? `${styles["btn-head"]} ${styles["btn-head-active"]}`
+                      : `${styles["btn-head"]}`
+                  }
+                >
+                  <a>Reprimand Type</a>
+                </div>
+              </Link>
+            </section>
           </div>
           <div className={styles.content}>
             <div class="d-flex justify-content-between align-items-center table-light">

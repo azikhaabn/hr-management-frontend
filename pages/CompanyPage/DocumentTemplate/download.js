@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "/styles/DocumentTemplate/download.module.css";
+import styles from "/styles/CompanyPage/DocumentTemplate/download.module.css";
 
 const DownloadTemplate = () => {
   return (

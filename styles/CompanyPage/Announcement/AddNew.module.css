@@ -16,8 +16,19 @@
 
 .modalContent h3 {
     color: #980f1b;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.Label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+
+.LabelCheck{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -10px;
+    margin-left: 10px;
+}
 
 .inputsubject{
     border-radius: 0;
@@ -31,17 +42,25 @@
     box-shadow: none;
 }
 
+.btnupload{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 .btnorganization{
-    border-radius: 10px;
-    /* font-family: Arial, Helvetica, sans-serif;  */
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
 }
 
 .btnbranch{
-    border-radius: 10px;
-    /* font-family: Arial, Helvetica, sans-serif;  */
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
     margin-left: 150px;
 }
 
-/* .inputemail{
-    font-family: Arial, Helvetica, sans-serif;
-} */
+.filter{
+    margin: 0 15px 0 5px;
+}
+

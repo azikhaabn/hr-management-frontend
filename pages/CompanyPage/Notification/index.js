@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import Link from "next/link";
-import styles from "/styles/Notification/Notification.module.css";
+import styles from "/styles/CompanyPage/Notification/Notification.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faCaretUp, faCaretDown, faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../../Component/navbar";

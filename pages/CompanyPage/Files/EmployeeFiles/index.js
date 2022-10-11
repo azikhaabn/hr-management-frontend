@@ -1,6 +1,6 @@
 import React, { Component, useMemo, useState } from "react";
 import Link from "next/link";
-import styles from "/styles/Files/Cfiles.module.css";
+import styles from "/styles/CompanyPage/Files/Cfiles.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";

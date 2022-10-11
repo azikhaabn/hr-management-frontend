@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "/styles/CompanyRelational/CompanyRelational.module.css";
+import styles from "/styles/CompanyPage/CompanyRelational/CompanyRelational.module.css";
 import Navbar from "../Component/navbar";
 
 const CompanyRelational = () => {

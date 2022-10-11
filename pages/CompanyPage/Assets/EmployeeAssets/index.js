@@ -1,6 +1,6 @@
 import React, { Component, useMemo, useState } from "react";
 import Link from "next/link";
-import styles from "/styles/Company/CompanyPage.module.css";
+import styles from "/styles/CompanyPage/Company/CompanyPage.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faCircleInfo,

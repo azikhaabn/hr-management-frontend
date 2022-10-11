@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import Link from "next/link";
-import styles from "/styles/Onboarding/Completed.module.css";
+import styles from "/styles/CompanyPage/Onboarding/Completed.module.css";
 import { useRouter } from "next/router";
 import Navbar from "../../../Component/navbar";
 

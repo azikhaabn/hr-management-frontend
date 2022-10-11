@@ -1,6 +1,5 @@
 import React from "react";
-import Link from "next/link";
-import styles from "/styles/DocumentTemplate/DocumentTemplate.module.css";
+import styles from "/styles/CompanyPage/DocumentTemplate/DocumentTemplate.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import DownloadTemplate from "./download";

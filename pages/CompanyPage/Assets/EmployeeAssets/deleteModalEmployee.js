@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "/styles/Company/ModalDelete.module.css";
+import styles from "/styles/CompanyPage/Company/ModalDelete.module.css";
 
 const DeleteModalEmployee = () => {
 	return (

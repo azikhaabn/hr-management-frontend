@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "/styles/Company/ModalAdd.module.css";
+import styles from "/styles/CompanyPage/Company/ModalAdd.module.css";
 
 const AddModalEmployee = () => {
 	return (

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "/styles/Task/AllTask.module.css";
+import styles from "/styles/CompanyPage/Task/AllTask.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faMagnifyingGlass

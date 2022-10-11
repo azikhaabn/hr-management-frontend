@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "/styles/Company/ModalEdit.module.css";
+import styles from "/styles/CompanyPage/Company/ModalEdit.module.css";
 
 const EditModalEmployee = () => {
 	return (

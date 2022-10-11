@@ -17,7 +17,9 @@ export default function Sidebar() {
         <div className={styles.sidebar}>
           <li>
             <FontAwesomeIcon className={styles.icon3} icon={faHome} />
-            Dashboard
+            <Link href="../dashboard">
+              <a>Dashboard</a>
+            </Link>
           </li>
           <div className={styles.dropdown1}>
             <li>
