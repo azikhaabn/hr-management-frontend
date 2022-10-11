@@ -1,64 +1,122 @@
 .main {
-  height: auto;
-  height: 100vh;
+	height: auto;
+	height: 100vh;
+}
+
+.navbar {
+	background-color: #112b3c;
+}
+
+.navList {
+	margin-bottom: 0;
+	padding: 8px 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.navItem {
+	list-style: none;
+	margin-right: 42px;
+	font-size: 26px;
+	color: #fff;
+}
+
+.navItem:nth-child(3) {
+	margin-left: -20px;
+}
+
+.navItem:first-child {
+	margin-right: auto;
+	margin-left: 2rem;
 }
 
 .image {
-  width: 100%;
-  height: auto;
-  margin-bottom: 5px;
+	width: 100%;
+	height: auto;
+	margin-bottom: 5px;
 }
 
 /* Media Queries */
 @media (min-width: 480px) {
-  .header {
-    width: 100%;
-    height: auto;
-  }
+	.header {
+		width: 100%;
+		height: auto;
+	}
 }
 
-.btn-polls {
-  font-size: 12px;
-  letter-spacing: 2px;
-  border-radius: 7px;
+.main-content {
+	height: auto;
+	margin: 10px 0;
 }
 
 .bg-content {
-  width: 95%;
-  height: auto;
-  background-color: #f8f7f7;
-  margin: 0 auto;
-  padding: 20px 0;
+	width: 95%;
+	background-color: #f8f7f7;
+	margin: 0 auto;
+	padding: 20px 0;
 }
 
 .content {
-  width: 95%;
-  height: 500px;
-  background-color: #fff;
-  margin: auto;
-  border: 10px solid #dee3e1;
+	width: 95%;
+	background-color: #fff;
+	margin: auto;
+	border: 10px solid #dee3e1;
 }
 
-.btn-sidebar {
-  color: #9A9896;
-  font-weight: bold;
-}
-
-.btn-sidebar:hover {
-  color: #910111;
-  font-weight: bold;
-  background-color: #fff;
+.row-sidebar {
+	height: 500px;
 }
 
 .sidebar {
-  background-color: #dee3e1;
-  height: 480px;
+	height: 100%;
+	background-color: #dee3e1;
 }
 
-.text-head {
-  color: #910111;
+.btn-tasks {
+	font-weight: 700;
+	color: #949494;
+	background-color: #dee3e1;
+	margin: 0 -12px;
+	padding: 20px;
+	cursor: pointer;
+	transition: 0.5s;
 }
 
-.polls h2 {
-  text-align: center;
+.btn-tasks:hover {
+	font-weight: 700;
+	color: #949494;
+	background-color: #fff;
+}
+
+.active {
+	color: #910111;
+	background-color: #fff;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.active:hover {
+	color: #910111;
+}
+
+.icon-poll {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.title-poll {
+	padding: 10px 8px 0 8px;
+}
+
+.title {
+	font-size: 36px;
+	font-weight: 500;
+	color: #910111;
+	margin-bottom: -5px;
+}
+
+.data-poll span {
+	font-size: 42px;
+	font-weight: 400;
 }
