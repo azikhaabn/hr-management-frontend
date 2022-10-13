@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "/styles/CompanyPage/Company/CompanyPage.module.css";
+import styles from "/styles/CompanyPage/Files/Cfiles.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
@@ -10,9 +10,9 @@ const InputFilter = ({ filter, setFilter }) => {
 				Search
 			</label>
 			<div className={`input-group mb-3`}>
-				<span className={`${styles["spanIcon"]} input-group-text`}>
+				<span className={`${styles["input-group"]} input-group-text`}>
 					<FontAwesomeIcon
-						className={`${styles["searchIcon"]}`}
+						className={`${styles["search-icon"]}`}
 						icon={faMagnifyingGlass}
 					/>
 				</span>
@@ -20,7 +20,7 @@ const InputFilter = ({ filter, setFilter }) => {
 					type="text"
 					value={filter || ""}
 					onChange={(e) => setFilter(e.target.value)}
-					className={`${styles["searchInput"]} form-control`}
+					className={`${styles["input-group"]} form-control`}
 				></input>
 			</div>
 		</>

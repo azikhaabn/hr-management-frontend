@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight, faMagnifyingGlass, faTrashCan, faCaretDown, faCaretUp } from "@fortawesome/free-solid-svg-icons";
 import { useRouter } from "next/router";
 import Navbar from "../../../Component/navbar";
+import ShowingSearch from "../../../Component/showingSearch"
+import Pagination from "../../../Component/pagination"
 
 export default function OtherFiles() {
   const router = useRouter();
@@ -50,49 +52,9 @@ export default function OtherFiles() {
 
                 <h5 className={`${styles["text-h5"]}`}>Drop files here, paste or <span className={`text-primary`}>browse</span></h5>
 
-                <section className="export-table-filter mb-3">
-                  <div class="col-12 pt-4">
-                    <div class="mx-3">
-                      <div className={`${styles["task-content"]} d-flex`}>
-                        <div className={`${styles["first-item"]} mt-4`}>
-                          <button type="button" className={`${styles["btn-add"]} btn btn-outline-secondary`}>
-                            <FontAwesomeIcon icon={faTrashCan} /> &nbsp; Delete
-                          </button>
-                        </div>
-                        <div className={`${styles["select-option"]} col-1 mb-2 me-2`}>
-                          <label for="select" className={`${styles["form-label"]} form-label`}>
-                            Showing
-                          </label>
-                          <select className={`${styles["input-group"]} form-select`} aria-label="Default select example">
-                            <option selected>10</option>
-                            <option value="20">20</option>
-                            <option value="30">30</option>
-                            <option value="40">40</option>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
-                          </select>
-                        </div>
-                        <div className={`col-2`}>
-                          <label for="search" className={`${styles["formLabel"]} form-label`}>
-                            Search
-                          </label>
-                          <div className={`input-group mb-3`}>
-                            <span className={`${styles["input-group"]} input-group-text`}>
-                              <FontAwesomeIcon
-                                className={`${styles["search-icon"]}`}
-                                icon={faMagnifyingGlass}
-                              />
-                            </span>
-                            <input
-                              type="text"
-                              className={`${styles["input-group"]} form-control`}
-                            ></input>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
+                <div>
+                  <ShowingSearch />
+                </div>
 
                 <section class="section-table">
                   <div className={`${styles.contentTable} container-fluid`}>
@@ -172,32 +134,7 @@ export default function OtherFiles() {
                   </div>
                 </section>
 
-                <section class="section-paginate mt-3">
-                  <div className={`container-fluid`}>
-                    <div className={`${styles.rowPaginate}`}>
-                      <p className={styles.textShow}>Showing 1 to 2 of 2 entries</p>
-                      <div>
-                        <Link href="#">
-                          <FontAwesomeIcon icon={faAngleLeft} className={styles.arrowIcon} />
-                        </Link>
-                        &nbsp; &nbsp; <span className={styles.numberPage}></span> &nbsp; &nbsp;
-                        <Link href="#">
-                          <FontAwesomeIcon icon={faAngleRight} className={styles.arrowIcon} />
-                        </Link>
-                      </div>
-                      <ul class="pagination">
-                        <li className={`${styles.prevPage} page-item disabled`}>
-                          <a className={`${styles.pageLinkPrev} page-link`}>Previous</a>
-                        </li>
-                        <li className={`${styles.nextPage} page-item`}>
-                          <a className={`${styles.pageLinkNext} page-link`} href="#">
-                            Go
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </section>
+                <Pagination />
               </div>
             </div>
           </div>

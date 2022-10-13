@@ -4,6 +4,8 @@ import styles from "/styles/CompanyPage/Notification/Notification.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faCaretUp, faCaretDown, faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Navbar from "../../Component/navbar";
+import Pagination from "../../Component/pagination";
+import ShowingSearch from "../../Component/showingSearch";
 
 export default function Notification() {
   return (
@@ -96,35 +98,9 @@ export default function Notification() {
                     </button>
                   </div>
 
-                  <section class="section-sellect-search mb-4">
-                    <div class="container-fluid">
-                      <div class="row mt-3 justify-content-end me-1">
-                        <div class="col-1">
-                          <label for="select" className={`${styles.formLabel} form-label`}>
-                            Showing
-                          </label>
-                          <select className={`${styles["form-select"]} form-select`} id="select">
-                            <option selected>10</option>
-                            <option value="25">25</option>
-                            <option value="50">50</option>
-                            <option value="75">75</option>
-                            <option value="100">100</option>
-                          </select>
-                        </div>
-                        <div class="col-2">
-                          <label for="search" className={`${styles.formLabel} form-label`}>
-                            Search
-                          </label>
-                          <div className={`input-group mb-3`}>
-                            <span className={`${styles["form-select"]} input-group-text`}>
-                              <FontAwesomeIcon className={styles["search-icon"]} icon={faMagnifyingGlass} />
-                            </span>
-                            <input type="text" className={`${styles["form-select"]} form-control`}></input>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </section>
+                <div>
+                  <ShowingSearch />
+                </div>
 
                   <table class="table">
                     <thead>
@@ -230,32 +206,7 @@ export default function Notification() {
               </div>
             </section>
 
-            <section class="section-paginate mt-3">
-              <div className={`container-fluid`}>
-                <div className={`${styles.rowPaginate}`}>
-                  <p className={styles.textShow}>Showing 0 to 0 of 0 entries</p>
-                  <div>
-                    <Link href="#">
-                      <FontAwesomeIcon icon={faAngleLeft} className={styles.arrowIcon} />
-                    </Link>
-                    &nbsp; &nbsp; <span className={styles.numberPage}></span> &nbsp; &nbsp;
-                    <Link href="#">
-                      <FontAwesomeIcon icon={faAngleRight} className={styles.arrowIcon} />
-                    </Link>
-                  </div>
-                  <ul class="pagination">
-                    <li className={`${styles.prevPage} page-item disabled`}>
-                      <a className={`${styles.pageLinkPrev} page-link`}>Previous</a>
-                    </li>
-                    <li className={`${styles.nextPage} page-item`}>
-                      <a className={`${styles.pageLinkNext} page-link`} href="#">
-                        Go
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
+            <Pagination />
           </div>
 
           <div class="modal fade" id="skipNotif" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
