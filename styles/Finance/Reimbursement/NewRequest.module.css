@@ -1,14 +1,22 @@
 .modal {
-  width: 700px;
+  width: 800px;
   height: 500px;
   box-shadow: 0 0 0 10px #dee3e1;
   margin-left: -7rem;
   overflow-y: scroll;
 }
 
-.form-label {
-  font-size: 14px;
-  margin-bottom: -5px !important;
+.input-group-tr {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px dotted #c0bfbf;
+  background-color: #fff;
+}
+
+.input-group-tr:focus {
+  box-shadow: none;
+  border-bottom: 2px dotted #c0bfbf;
+  background-color: #fff;
 }
 
 .input-group {
@@ -16,6 +24,7 @@
   border-radius: 0;
   border-bottom: 2px solid #c0bfbf;
   background-color: #fff;
+  font-size: 12px;
 }
 
 .input-group:focus {
@@ -24,8 +33,13 @@
   background-color: #fff;
 }
 
-.search-icon {
-  color: #b1b3bd;
+.table-head {
+  background-color: #eee;
+  color: #a21517;
+}
+
+.table-body select {
+  width: 120%;
 }
 
 .btn-box {

@@ -6,7 +6,6 @@ import Pagination from "../../Component/pagination";
 import ShowingSearch from "../../Component/showingSearch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faCaretUp, faCaretDown, faCircleInfo, faXmark, faBars, faUser } from "@fortawesome/free-solid-svg-icons";
-import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
 
 export default function Reimbursement() {
   return (
@@ -14,20 +13,12 @@ export default function Reimbursement() {
       <main className={styles.main} id="main">
         <Navbar />
 
-        <div className={`${styles.container} mx-3 mt-2`}>
-          <div className={`${styles["user-icon"]} d-flex justify-content-start`}>
-            <FontAwesomeIcon icon={faCircleUser} style={{ fontSize: 80 }} />
-            <div className={`mt-3 ms-3`}>
-              <h4>Kendall Jenner</h4>
-              <p>CEO</p>
-            </div>
-          </div>
-
-          <div className={`${styles["content"]} mt-2`}>
+        <div className={`${styles.container}`}>
+          <div className={`${styles["content"]}`}>
             <div>
               <img src="/image_618.png" className={styles.image}></img>
             </div>
-            <div className={`${styles["box"]}`}>
+            <div className={`${styles["box"]} mx-3`}>
               <div className={`${styles["first-box-content"]} d-flex justify-content-between`}>
                 <div>
                   <h5>ASSIGN/UPDATE/REQUEST REIMBURSEMENT</h5>
@@ -59,9 +50,11 @@ export default function Reimbursement() {
                   <button type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`}>
                     NEW
                   </button>
-                  <button type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`}>
-                    VIEW SETTING
-                  </button>
+                  <Link href="Reimbursement/ViewSetting">
+                    <a type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`}>
+                      VIEW SETTING
+                    </a>
+                  </Link>
                 </div>
                 <div className={`${styles["btn"]}`}>
                   <button type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary `}>

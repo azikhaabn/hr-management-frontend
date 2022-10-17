@@ -1,5 +1,6 @@
 .main {
   height: 100vh;
+  background-color: #f8f7f7
 }
 
 .content {
@@ -26,7 +27,8 @@
 }
 
 .btn-box {
-  font-size: 12px;
+  font-size: 10px;
+  padding: 10px;
   letter-spacing: 3px;
   border-radius: 7px;
   margin: 10px 10px 0 0;
@@ -34,7 +36,7 @@
 }
 
 .btn {
-  margin: 10px 190px 0 0;
+  margin: 10px 180px 0 0;
 }
 
 .second-box-content {

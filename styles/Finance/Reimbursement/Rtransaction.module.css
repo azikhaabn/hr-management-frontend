@@ -1,9 +1,5 @@
 .main {
   height: 100vh;
-}
-
-.content {
-  height: auto;
   background-color: #f8f7f7;
 }
 
@@ -37,7 +33,7 @@
   letter-spacing: 3px;
   position: absolute;
   right: 50px;
-  margin-top: 20px;
+  top: 100px;
   z-index: 1;
   color: #fff;
   font-size: 15px;

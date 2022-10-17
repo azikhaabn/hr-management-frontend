@@ -7,6 +7,7 @@ import ShowingSearch from "../../../Component/showingSearch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretUp, faCaretDown, faXmark, faCircleInfo, faPencil } from "@fortawesome/free-solid-svg-icons";
 import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
+import NewRequest from "./newRequest";
 
 export default function Request() {
   return (
@@ -14,16 +15,8 @@ export default function Request() {
       <main className={styles.main} id="main">
         <Navbar />
 
-        <div className={`${styles.container} mx-3 mt-2`}>
-          <div className={`${styles["user-icon"]} d-flex justify-content-start`}>
-            <FontAwesomeIcon icon={faCircleUser} style={{ fontSize: 80 }} />
-            <div className={`mt-3 ms-3`}>
-              <h4>Kendall Jenner</h4>
-              <p>CEO</p>
-            </div>
-          </div>
-
-          <div className={`${styles["content"]} mt-2`}>
+        <div className={`${styles.container}`}>
+          <div className={`${styles["content"]}`}>
             <div className={`${styles["header"]}`}>
               <Link href="/Finance/Reimbursement">
                 <a type="button" className={`${styles["btn-img"]}`}>
@@ -85,7 +78,7 @@ export default function Request() {
               <div class="mx-4">
                 <div>
                   <Link href="Assign/NewBtn">
-                    <a type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`}>
+                    <a type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`} data-bs-toggle="modal" data-bs-target="#exampleModal">
                       CREATE REIMBURSEMENT REQUEST
                     </a>
                   </Link>
@@ -193,6 +186,12 @@ export default function Request() {
                 <Pagination />
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <NewRequest />
           </div>
         </div>
       </main>
