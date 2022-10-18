@@ -94,7 +94,22 @@ export default function ReprimandList() {
             </div>
             <section class="section-sellect-search mb-4">
               <div class="container-fluid">
-                <div class="row mt-3 justify-content-end me-1">
+                <div class="row mt-3 justify-content-end me-3">
+                  <div class="col-1">
+                    <label
+                      for="select"
+                      className={`${styles.formLabel} form-label`}
+                    >
+                      Showing
+                    </label>
+                    <select className={`${styles.formSelect} form-select`}>
+                      <option selected>10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="75">75</option>
+                      <option value="100">100</option>
+                    </select>
+                  </div>
                   <div class="col-2">
                     <label
                       for="search"
@@ -102,7 +117,7 @@ export default function ReprimandList() {
                     >
                       Search
                     </label>
-                    <div className={`input-group mb-3`}>
+                    <div className={`input-group mb-5`}>
                       <span className={`${styles.spanIcon} input-group-text`}>
                         <FontAwesomeIcon
                           className={styles.searchIcon}
@@ -114,24 +129,6 @@ export default function ReprimandList() {
                         className={`${styles.searchInput} form-control`}
                       ></input>
                     </div>
-                  </div>
-                  <div class="col-1">
-                    <label
-                      for="select"
-                      className={`${styles.formLabel} form-label`}
-                    >
-                      Showing
-                    </label>
-                    <select
-                      className={`${styles.formSelect} form-select`}
-                      id="select"
-                    >
-                      <option selected>10</option>
-                      <option value="25">25</option>
-                      <option value="50">50</option>
-                      <option value="75">75</option>
-                      <option value="100">100</option>
-                    </select>
                   </div>
                 </div>
               </div>
@@ -177,41 +174,32 @@ export default function ReprimandList() {
             </section>
 
             <section class="section-paginate mt-3">
-              <div className={`container-fluid`}>
-                <div className={`${styles.rowPaginate}`}>
-                  <p className={styles.textShow}>
-                    Showing 1 to {pageSize} of {pageSize} entries
-                  </p>
-                  <div>
-                    <Link href="#">
-                      <FontAwesomeIcon
-                        onClick={() => previousPage()}
-                        icon={faAngleLeft}
-                        className={`${
-                          !canPreviousPage
-                            ? styles["arrow-icon-disabled"]
-                            : styles["arrow-icon"]
-                        } `}
-                      />
-                    </Link>
-                    &nbsp; &nbsp;{" "}
-                    <span className={styles.numberPage}>{pageIndex + 1}</span>{" "}
-                    &nbsp; &nbsp;
-                    <Link href="#">
-                      <FontAwesomeIcon
-                        onClick={() => nextPage()}
-                        icon={faAngleRight}
-                        className={`${
-                          !canNextPage
-                            ? styles["arrow-icon-disabled"]
-                            : styles["arrow-icon"]
-                        } `}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </section>
+							<div className={`container-fluid`}>
+								<div className={`${styles.rowPaginate}`}>
+									<p className={styles.textShow}>Showing 1 to 2 of 2 entries</p>
+									<div className={styles.slidepage}>
+										<Link href="#">
+											<FontAwesomeIcon icon={faAngleLeft} className={styles.arrowIcon} />
+										</Link>
+										&nbsp; &nbsp; <span className={styles.numberPage}>1</span> &nbsp;
+										&nbsp;
+										<Link href="#">
+											<FontAwesomeIcon icon={faAngleRight} className={styles.arrowIcon} />
+										</Link>
+									</div>
+									{/* <ul class="pagination">
+										<li className={`${styles.prevPage} page-item disabled`}>
+											<a className={`${styles.pageLinkPrev} page-link`}>Previous</a>
+										</li>
+										<li className={`${styles.nextPage} page-item`}>
+											<a className={`${styles.pageLinkNext} page-link`} href="#">
+												Go
+											</a>
+										</li>
+									</ul> */}
+								</div>
+							</div>
+						</section>
           </div>
         </div>
 

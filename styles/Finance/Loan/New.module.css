@@ -1,0 +1,90 @@
+.main {
+    height: auto;
+  }
+
+.mainContent{
+    height: 100vh;
+}
+  
+.content{
+    margin: 30px 20px 0 20px;
+    background: #F8F7F7;
+    height: 550px;
+}
+
+.Label{
+    font-size: small;
+}
+
+.input-date{
+    /* margin: 0 0 0 20px; */
+    border-radius: 0;
+    border: none;
+    background: #F8F7F7;
+    border-bottom: 1px solid black;
+}
+
+.input-date:focus,
+.input-date:active{
+    background: #F8F7F7;
+    border-bottom: 1px solid black;
+    box-shadow: none;
+}
+
+.inputcontent{
+    margin-top: 15px;
+    background: #F8F7F7;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.inputcontent:focus,
+.inputcontent:active{
+    background: #F8F7F7;
+    border-bottom: 1px solid black;
+    box-shadow: none;
+}
+
+.inputselect {
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    background-color: #F8F7F7;
+    
+}
+
+.inputselect:focus {
+    box-shadow: none;
+}
+
+.icon{
+    color: #9A0101;
+    margin: 11px 25px;
+}
+
+.newloan{
+   color: #9A0101;
+  margin-left: -18px;
+   border: none;
+   background-color: #F8F7F7;
+}
+
+.newloan:hover{
+    border: none;
+    color: #9A0101;
+}
+
+.inputdeskripsi{
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: #F8F7F7;
+}
+
+.inputdeskripsi:focus,
+.inputdeskripsi:active{
+    border-bottom: 1px solid black;
+    box-shadow: none;
+    background-color: #F8F7F7;
+}

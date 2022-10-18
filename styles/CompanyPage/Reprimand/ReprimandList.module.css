@@ -101,9 +101,9 @@
 }
 
 .formLabel {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   margin-bottom: -5px !important;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .formSelect {
@@ -114,7 +114,15 @@
   color: #7f7f7d;
 }
 
-/* .formSelect:hover, */
+.formSelect option{
+  background: #980f1b;
+  color: #ffffff;
+}
+
+.formSelect option:hover{
+  background: #EA454B;
+}
+
 .formSelect:focus,
 .formSelect:active {
   border-bottom: 2px solid #b6b6b6;
@@ -127,7 +135,6 @@
   border: none;
   border-bottom: 2px solid #b6b6b6;
   border-radius: 0;
- 
 }
 
 .searchIcon {
@@ -160,22 +167,39 @@
   display: flex;
   justify-content: space-between;
   margin: 20px 10px;
+}
 
-} 
+.slidepage{
+    margin-right: 550px;
+}
 
 .textShow {
   font-size: 14px;
   letter-spacing: 0.01px;
   font-weight: bold;
   font-style: italic;
+  
 }
 
-.arrow-icon-disabled{
- color: #b9b9bc;
- justify-content: center;
+.numberPage {
+  font-size: 22px;
 }
 
-.arrow-icon{
-justify-content: center;
+.arrowIcon {
+  font-size: 14px;
+  color: #a5a5a5;
+  cursor: pointer;
 }
 
+/* .prevPage {
+  text-transform: uppercase;
+  /* #7d7d7d; */
+
+
+/* .nextPage {
+  text-transform: uppercase;
+}
+
+.pageLinkPrev {
+  color: #9e9e9e;
+} */

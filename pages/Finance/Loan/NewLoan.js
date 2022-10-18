@@ -1,25 +1,27 @@
 import React from "react";
-import styles from "/styles/CompanyPage/AddNewReprimand.module.css";
+import styles from "/styles/Finance/Loan/NewLoan.module.css";
 
-const AddNew = ({ closeModal }) => {
+const NewLoan = ({ closeModal }) => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <div className={`${styles.modal} modal-content rounded-0`}>
+        <div className={`${styles.modal} modal-content rounded-0 mt-5`}>
           <div
-            className={`${styles.modalContent} modal-header mt-2 ms-3 mb-3 me-3 border-bottom`}
+            className={`${styles.modalnewloan} modal-header mt-4 ms-4 mb-3 me-3`}
           >
-            <h3 class="modal-title">Edit Reprimand Type</h3>
+            <h3 class="modal-title">Add New Loan Name</h3>
           </div>
 
           <div class="modal-body ms-3">
-            <div className={`col-5 mt-3`}>
-              <h6>Content</h6>
-              <select
-                className={`${styles["select-option"]} form-select`}
-                aria-label="Default select example"
-              >
-              </select>
+            <div class="col-10 mt-2">
+              <label className={styles.Label}>Loan Name</label>
+              <div className={`input-group mb-3`}>
+                <input
+                  type="text"
+                  id="Loan"
+                  className={`${styles.inputnewloan} form-control`}
+                ></input>
+              </div>
             </div>
           </div>
 
@@ -29,14 +31,14 @@ const AddNew = ({ closeModal }) => {
               className={`${styles.btnModal} btn btn-outline-secondary mt-2 me-1 btn-sm`}
               onClick={() => closeModal(false)}
             >
-              SUMBIT
+              SAVE
             </button>
             <button
               type="button"
               className={`${styles.btnModal} btn btn-outline-secondary mt-2 me-2 btn-sm`}
               data-bs-dismiss="modal"
             >
-              CANCEL
+              CLOSE
             </button>
           </div>
         </div>
@@ -45,4 +47,4 @@ const AddNew = ({ closeModal }) => {
   );
 };
 
-export default AddNew;
+export default NewLoan;

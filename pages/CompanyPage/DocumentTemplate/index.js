@@ -5,7 +5,7 @@ import { faEllipsisVertical } from "@fortawesome/free-solid-svg-icons";
 import DownloadTemplate from "./download";
 import Navbar from "../../Component/navbar";
 
-export default function announcement() {
+export default function Document() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>

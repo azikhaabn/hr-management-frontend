@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import Head from "next/head";
 import styles from "/styles/CompanyPage/Announcement/AddNew.module.css";
-import Organization from "./Organization";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilter } from "@fortawesome/free-solid-svg-icons";
 
 const AddNewAnnouncement = ({ closeModal, name, value }) => {
   const editorRef = useRef();
@@ -15,25 +15,20 @@ const AddNewAnnouncement = ({ closeModal, name, value }) => {
       ClassicEditor: require("@ckeditor/ckeditor5-build-classic"),
     };
   }, []);
+
   return (
     <div className={styles.container}>
-
       <main className={styles.main}>
         <div className={`${styles.modal} modal-content rounded-0`}>
           <div
-            className={`${styles.modalContent} modal-header mt-2 ms-3 mb-3 me-3`}
+            className={`${styles.modalContent} modal-header mt-2 ms-3 mb-1 me-3`}
           >
             <h3 class="modal-title">Add Announcement</h3>
           </div>
           <div class="modal-body ms-3">
             <div class="d-flex justify-content-between">
               <div class="col-12">
-                <label
-                  for="subject"
-                  className={`${styles.formLabel} form-label`}
-                >
-                  Subject
-                </label>
+                <label className={styles.Label}>Subject</label>
                 <div className={`input-group mb-4`}>
                   <input
                     type="text"
@@ -44,7 +39,7 @@ const AddNewAnnouncement = ({ closeModal, name, value }) => {
               </div>
             </div>
 
-            <h6>Content</h6>
+            <label className={styles.Label}>Content</label>
             {editorLoaded ? (
               <CKEditor
                 type=""
@@ -62,10 +57,10 @@ const AddNewAnnouncement = ({ closeModal, name, value }) => {
             <button
               type="button"
               className={`${styles.btnupload} btn btn-outline-secondary mt-2 me-1 btn-sm`}
-              onClick={() => closeModal(false)}
             >
               UPLOAD FILE
             </button>
+
             <div class="d-flex justify-content-start mt-4">
               <div className="form-check me-5">
                 <input
@@ -74,23 +69,21 @@ const AddNewAnnouncement = ({ closeModal, name, value }) => {
                   value=""
                   id="flexCheckDefault"
                 ></input>
-                <label class="form-check-label" for="flexCheckDefault">
-                  Send to Email
-                </label>
+                <label className={styles.LabelCheck}>Send to Email</label>
               </div>
             </div>
             <button
-              type="button"
-              className={`${styles.btnorganization} btn btn-outline-secondary mt-2 me-5 btn-sm`}
-              onClick={() => closeModal(false)}
+              className={`${styles.btnorganization} btn btn-outline-secondary mt-2 me-4 btn-sm`}
             >
-              FILTER BY ORGANIZATION
+              <FontAwesomeIcon className={styles.filter} icon={faFilter} />
+              Filter By Organization
             </button>
             <button
               type="button"
               className={`${styles.btnbranch} btn btn-outline-secondary mt-2 me-5 btn-sm`}
               onClick={() => closeModal(false)}
             >
+              <FontAwesomeIcon className={styles.filter} icon={faFilter} />
               FILTER BY BRANCH
             </button>
           </div>
@@ -111,24 +104,7 @@ const AddNewAnnouncement = ({ closeModal, name, value }) => {
             </button>
           </div>
         </div>
-        <div
-          class="modal fade"
-          id="modalCreate"
-          tabindex="-1"
-          aria-labelledby="modalAdd"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <Organization />
-          </div>
-        </div>
       </main>
-
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"
-      ></script>
     </div>
   );
 };

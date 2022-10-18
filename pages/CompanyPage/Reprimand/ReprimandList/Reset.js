@@ -1,15 +1,14 @@
 import React from "react";
 import styles from "/styles/CompanyPage/Reprimand/ResetCancelDelete.module.css";
 
-const hapus = ({ closeModal }) => {
+const reset = ({ closeModal }) => {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <div className={`${styles.modal} modal-content rounded-0`}>
           <div class="modal-body ms-3">
             <p className={styles.text}>
-              Are You Sure Want To Delete This<br></br>
-              Reprimand Type?
+              Are You Sure Want To Reset The Search?
             </p>
           </div>
 
@@ -35,4 +34,4 @@ const hapus = ({ closeModal }) => {
   );
 };
 
-export default hapus;
+export default reset;

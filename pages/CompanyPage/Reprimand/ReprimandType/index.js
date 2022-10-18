@@ -86,7 +86,22 @@ export default function ReprimandType() {
             </div>
             <section class="section-sellect-search mb-4">
               <div class="container-fluid">
-                <div class="row mt-3 justify-content-end me-1">
+                <div class="row mt-1 justify-content-end me-3">
+                  <div class="col-1">
+                    <label
+                      for="select"
+                      className={`${styles.formLabel} form-label`}
+                    >
+                      Showing
+                    </label>
+                    <select className={`${styles.formSelect} form-select`}>
+                      <option selected>10</option>
+                      <option value="25">25</option>
+                      <option value="50">50</option>
+                      <option value="75">75</option>
+                      <option value="100">100</option>
+                    </select>
+                  </div>
                   <div class="col-2">
                     <label
                       for="search"
@@ -94,7 +109,7 @@ export default function ReprimandType() {
                     >
                       Search
                     </label>
-                    <div className={`input-group mb-3`}>
+                    <div className={`input-group mb-5`}>
                       <span className={`${styles.spanIcon} input-group-text`}>
                         <FontAwesomeIcon
                           className={styles.searchIcon}
@@ -106,24 +121,6 @@ export default function ReprimandType() {
                         className={`${styles.searchInput} form-control`}
                       ></input>
                     </div>
-                  </div>
-                  <div class="col-1">
-                    <label
-                      for="select"
-                      className={`${styles.formLabel} form-label`}
-                    >
-                      Showing
-                    </label>
-                    <select
-                      className={`${styles.formSelect} form-select`}
-                      id="select"
-                    >
-                      <option selected>10</option>
-                      <option value="25">25</option>
-                      <option value="50">50</option>
-                      <option value="75">75</option>
-                      <option value="100">100</option>
-                    </select>
                   </div>
                 </div>
               </div>

@@ -92,15 +92,10 @@
   margin-left: 10px;
 }
 
-.item:hover {
-  background: #8f0111;
-  /* border: none; */
+.dropdownMenu li .item:hover{
+  color: #fff;
 }
 
-.drop button {
-  border: none;
-  background-color: #8f0111;
-}
 
 .Labelbutton {
   font-family: Arial, Helvetica, sans-serif;
