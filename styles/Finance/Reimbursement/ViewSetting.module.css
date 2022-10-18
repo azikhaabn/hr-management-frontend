@@ -3,10 +3,10 @@
   background-color: #f8f7f7;
 }
 
-/* .content {
+.content {
   height: auto;
   background-color: #f8f7f7;
-} */
+}
 
 .image {
   width: 100%;
@@ -58,3 +58,12 @@
   margin-top: 2px;
   color: #e3e3e3;
 } */
+
+.btn-box {
+  font-size: 10px;
+  padding: 10px;
+  letter-spacing: 3px;
+  border-radius: 7px;
+  margin: -20px 10px 0 0;
+  font-weight: bold;
+}

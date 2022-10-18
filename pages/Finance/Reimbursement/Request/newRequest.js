@@ -12,7 +12,7 @@ const NewRequest = () => {
             New Reimbursement Request
           </h5>
         </div>
-        <div className={`${styles["modal-body"]} modal-body ms-3`}>
+        <div className={`${styles["modal-body"]} modal-body mx-3`}>
           <div class="d-flex justify-content-start">
             <div class="col-5">
               <label for="inputBalance" className={`${styles["form-label"]} form-label`}>

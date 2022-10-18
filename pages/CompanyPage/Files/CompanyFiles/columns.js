@@ -22,5 +22,10 @@ export const COLUMNS = [
     {
         Header: "Action",
         accessor: "action",
+    //     Cell: cell => (
+    //     <button value={cell.accessor} onClick={props.handleClickGroup}>
+    //       {cell.accessor}
+    //     </button>
+    //   )
     },
 ]

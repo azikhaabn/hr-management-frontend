@@ -52,32 +52,35 @@ export default function Request() {
                   <tbody className={`${styles["table-body"]}`}>
                     <tr>
                       <td>Medical Claim</td>
-                      <td><input class="form-check-input ms-5" type="checkbox" value="" id="flexCheckDefault" /></td>
-                      <td><input class="form-check-input ms-5" type="checkbox" value="" id="flexCheckDefault" /></td>
-                      <td><input class="form-check-input ms-5" type="checkbox" value="" id="flexCheckDefault" /></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></td>
                     </tr>
                     <tr>
                       <td>Transportasi</td>
-                      <td><input class="form-check-input ms-5" type="checkbox" value="" id="flexCheckDefault" /></td>
-                      <td><input class="form-check-input ms-5" type="checkbox" value="" id="flexCheckDefault" /></td>
-                      <td><input class="form-check-input ms-5" type="checkbox" value="" id="flexCheckDefault" /></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></td>
                     </tr>
                     <tr>
                       <td>asdfg</td>
-                      <td><input class="form-check-input ms-5" type="checkbox" value="" id="flexCheckDefault" /></td>
-                      <td><input class="form-check-input ms-5" type="checkbox" value="" id="flexCheckDefault" /></td>
-                      <td><input class="form-check-input ms-5" type="checkbox" value="" id="flexCheckDefault" /></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></td>
                     </tr>
                     <tr>
                       <td>hjkl</td>
-                      <td><input class="form-check-input ms-5" type="checkbox" value="" id="flexCheckDefault" /></td>
-                      <td><input class="form-check-input ms-5" type="checkbox" value="" id="flexCheckDefault" /></td>
-                      <td><input class="form-check-input ms-5" type="checkbox" value="" id="flexCheckDefault" /></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></td>
+                      <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" /></td>
                     </tr>
                   </tbody>
                 </table>
               </section>
               <Pagination />
+              <div className={`d-flex justify-content-end`}>
+                <button type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary `}>SAVE</button>
+              </div>
             </div>
           </div>
         </div>

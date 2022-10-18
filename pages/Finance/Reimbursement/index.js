@@ -6,6 +6,8 @@ import Pagination from "../../Component/pagination";
 import ShowingSearch from "../../Component/showingSearch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faCaretUp, faCaretDown, faCircleInfo, faXmark, faBars, faUser } from "@fortawesome/free-solid-svg-icons";
+import ReimbursementSimulation from "./ReimSimulation";
+import ViewReimbursement from "./viewReim";
 
 export default function Reimbursement() {
   return (
@@ -57,7 +59,7 @@ export default function Reimbursement() {
                   </Link>
                 </div>
                 <div className={`${styles["btn"]}`}>
-                  <button type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary `}>
+                  <button type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`} data-bs-toggle="modal" data-bs-target="#reimSimulation">
                     REIMBURSEMENT SIMULATION
                   </button>
                 </div>
@@ -137,7 +139,7 @@ export default function Reimbursement() {
                       <td className={`${styles["modal-list"]}`}>
                         <ul>
                           <li>
-                            <a>
+                            <a className={`btn`} data-bs-toggle="modal" data-bs-target="#viewReim">
                               <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#A21517", marginRight: 10 }} />
                             </a>
                           </li>
@@ -168,7 +170,7 @@ export default function Reimbursement() {
                       <td className={`${styles["modal-list"]}`}>
                         <ul>
                           <li>
-                            <a>
+                            <a className={`btn`} data-bs-toggle="modal" data-bs-target="#viewReim">
                               <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: "#A21517", marginRight: 10 }} />
                             </a>
                           </li>
@@ -196,6 +198,21 @@ export default function Reimbursement() {
 
               <Pagination />
             </div>
+          </div>
+        </div>
+
+        {/* MODAL REIMBURSEMENT SIMULATION */}
+        <div class="modal fade" id="reimSimulation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <ReimbursementSimulation />
+          </div>
+        </div>
+
+
+        {/* MODAL VIEW RWiMBURSEMENT */}
+        <div class="modal fade" id="viewReim" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <ViewReimbursement />
           </div>
         </div>
       </main>
