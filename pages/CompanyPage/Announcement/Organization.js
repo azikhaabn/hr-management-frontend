@@ -1,8 +1,8 @@
 import React from "react";
+import Head from "next/head";
 import styles from "/styles/CompanyPage/Announcement/organization.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-<<<<<<< HEAD
   faMagnifyingGlass,
   faAngleRight,
   faAngleLeft,
@@ -14,14 +14,7 @@ import {
   useRowSelectColumn,
 } from "@lineup-lite/hooks";
 import { useRouter } from "next/router";
-=======
-  faMagnifyingGlass
-} from "@fortawesome/free-solid-svg-icons";
-import { useTable, useRowSelect } from "react-table";
-import {
-  useRowSelectColumn
-} from "@lineup-lite/hooks";
->>>>>>> frontendzahra/main
+import Pagination from "../../Component/pagination";
 
 const Organization = ({ closeModal }) => {
   const data = React.useMemo(
@@ -81,7 +74,6 @@ const Organization = ({ closeModal }) => {
       useRowSelectColumn
     );
 
-<<<<<<< HEAD
   const {
     // getTableProps,
     // getTableBodyProps,
@@ -102,8 +94,6 @@ const Organization = ({ closeModal }) => {
   const router = useRouter();
   const currentRoute = router.pathname;
 
-=======
->>>>>>> frontendzahra/main
   return (
     <div className={styles.container}>
       <main className={styles.main}>
@@ -123,21 +113,12 @@ const Organization = ({ closeModal }) => {
                 >
                   Showing
                 </label>
-<<<<<<< HEAD
                 <select className={`${styles.formSelect} form-select`}>
                   <option selected>10</option>
                   <option value="25">25</option>
                   <option value="50">50</option>
                   <option value="75">75</option>
                   <option value="100">100</option>
-=======
-                <select className={`${styles.formSelect} form-select`}> 
-                    <option selected>10</option>
-                    <option value="25">25</option>
-                    <option value="50">50</option>
-                    <option value="75">75</option>
-                    <option value="100">100</option>
->>>>>>> frontendzahra/main
                 </select>
               </div>
               <div class="col-4">
@@ -202,46 +183,7 @@ const Organization = ({ closeModal }) => {
                 </div>
               </div>
             </section>
-<<<<<<< HEAD
-            {/* <section class="section-paginate mt-3">
-=======
-           {/* <section class="section-paginate mt-3">
->>>>>>> frontendzahra/main
-              <div className={`container-fluid`}>
-                <div className={`${styles.rowPaginate}`}>
-                  <p className={styles.textShow}>
-                    Showing 0 to {pageSize} of {pageSize} entries
-                  </p>
-                   <div>
-                    <Link href="#">
-                      <FontAwesomeIcon
-                        onClick={() => previousPage()}
-                        icon={faAngleLeft}
-                        className={`${
-                          !canPreviousPage
-                            ? styles["arrow-icon-disabled"]
-                            : styles["arrow-icon"]
-                        } `}
-                      />
-                    </Link>
-                    &nbsp; &nbsp;{" "}
-                    <span className={styles.numberPage}>{pageIndex + 1}</span>{" "}
-                    &nbsp; &nbsp;
-                    <Link href="#">
-                      <FontAwesomeIcon
-                        onClick={() => nextPage()}
-                        icon={faAngleRight}
-                        className={`${
-                          !canNextPage
-                            ? styles["arrow-icon-disabled"]
-                            : styles["arrow-icon"]
-                        } `}
-                      />
-                    </Link>
-                  </div> 
-                </div>
-              </div>
-            </section>*/}
+            <Pagination />
           </div>
 
           <div class="modal-footer border-top mb-2">

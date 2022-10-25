@@ -14,6 +14,7 @@ import { useGlobalFilter, useTable, usePagination } from "react-table";
 import Navbar from "../../../Component/navbar";
 import AddNew from "./AddNew";
 import Filter from "./Filter";
+import Pagination from "../../../Component/pagination"
 
 export default function ReprimandList() {
   const columns = useMemo(() => COLUMNS, []);
@@ -173,33 +174,7 @@ export default function ReprimandList() {
               </div>
             </section>
 
-            <section class="section-paginate mt-3">
-							<div className={`container-fluid`}>
-								<div className={`${styles.rowPaginate}`}>
-									<p className={styles.textShow}>Showing 1 to 2 of 2 entries</p>
-									<div className={styles.slidepage}>
-										<Link href="#">
-											<FontAwesomeIcon icon={faAngleLeft} className={styles.arrowIcon} />
-										</Link>
-										&nbsp; &nbsp; <span className={styles.numberPage}>1</span> &nbsp;
-										&nbsp;
-										<Link href="#">
-											<FontAwesomeIcon icon={faAngleRight} className={styles.arrowIcon} />
-										</Link>
-									</div>
-									{/* <ul class="pagination">
-										<li className={`${styles.prevPage} page-item disabled`}>
-											<a className={`${styles.pageLinkPrev} page-link`}>Previous</a>
-										</li>
-										<li className={`${styles.nextPage} page-item`}>
-											<a className={`${styles.pageLinkNext} page-link`} href="#">
-												Go
-											</a>
-										</li>
-									</ul> */}
-								</div>
-							</div>
-						</section>
+            <Pagination />
           </div>
         </div>
 

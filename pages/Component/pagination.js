@@ -11,7 +11,7 @@ export default function Pagination() {
         <section class="section-paginate mt-3">
           <div className={`container-fluid`}>
             <div className={`${styles["row-paginate"]}`}>
-              <p className={styles["text-show"]}>Showing 1 to 2 of 2 entries</p>
+              <p className={styles["text-show"]}>Showing 1 to 1 of 1 entries</p>
               <div>
                 <Link href="#">
                   <FontAwesomeIcon icon={faAngleLeft} className={styles["arrow-icon"]} />

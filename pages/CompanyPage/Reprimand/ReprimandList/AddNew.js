@@ -22,13 +22,15 @@ const AddNewReprimandList = ({ closeModal }) => {
                 <option selected>--Select Employee--</option>
               </select>
             </div>
+            
             <button
               type="button"
               className={`${styles.btnFile} btn btn-outline-secondary mt-4 me-1 btn-sm`}
-              onClick={() => closeModal(false)}
+             
             >
               ATTACH FILE (MAX 10 MB)
             </button>
+           
             <div class="d-flex justify-content-start mt-4">
               <div className="form-check me-5">
                 <input

@@ -14,6 +14,7 @@ import MOCK_DATA from "./MOCK_DATA.json";
 import { useGlobalFilter, useTable, usePagination } from "react-table";
 import Navbar from "../../../Component/navbar";
 import AddNew from "./AddNew";
+import Pagination from "../../../Component/pagination";
 
 export default function ReprimandType() {
   const columns = useMemo(() => COLUMNS, []);
@@ -164,43 +165,7 @@ export default function ReprimandType() {
                 </div>
               </div>
             </section>
-
-            <section class="section-paginate mt-3">
-              <div className={`container-fluid`}>
-                <div className={`${styles.rowPaginate}`}>
-                  <p className={styles.textShow}>
-                    Showing 1 to {pageSize} of {pageSize} entries
-                  </p>
-                  <div>
-                    <Link href="#">
-                      <FontAwesomeIcon
-                        onClick={() => previousPage()}
-                        icon={faAngleLeft}
-                        className={`${
-                          !canPreviousPage
-                            ? styles["arrow-icon-disabled"]
-                            : styles["arrow-icon"]
-                        } `}
-                      />
-                    </Link>
-                    &nbsp; &nbsp;{" "}
-                    <span className={styles.numberPage}>{pageIndex + 1}</span>{" "}
-                    &nbsp; &nbsp;
-                    <Link href="#">
-                      <FontAwesomeIcon
-                        onClick={() => nextPage()}
-                        icon={faAngleRight}
-                        className={`${
-                          !canNextPage
-                            ? styles["arrow-icon-disabled"]
-                            : styles["arrow-icon"]
-                        } `}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <Pagination />
           </div>
         </div>
 

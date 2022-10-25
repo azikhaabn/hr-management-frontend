@@ -17,9 +17,10 @@ export default function Cash() {
               <div className={`pt-1 ps-4`}>
                 <div className={styles["header"]}>
                 <div class="d-flex justify-content-end mt-3">
-                    <a className={`${styles["setting-btn"]} btn btn-light`}>
+                    <a  href="/Setting/SettFinance/SettCashAd" className={`${styles["setting-btn"]} btn btn-light`}>
                       Settings
                     </a>
+                   
                   </div>
                   <div className={styles.link}>
                     <a href="">Finance</a>
