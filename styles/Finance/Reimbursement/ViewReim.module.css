@@ -1,0 +1,53 @@
+.modal {
+  width: 700px;
+  height: 500px;
+  box-shadow: 0 0 0 10px #dee3e1;
+  margin-left: -7rem;
+  overflow-y: scroll;
+}
+
+.form-label {
+  font-size: 14px;
+  margin-bottom: -5px !important;
+}
+
+.input-group {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #c0bfbf;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+.input-group:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #c0bfbf;
+  background-color: #fff;
+}
+
+.input-group option {
+  font-size: 15px;
+}
+
+.check-input {
+  background-color: #bdbdbd;
+  border: none;
+  cursor: pointer;
+}
+
+.check-input:active, .check-input:checked {
+  box-shadow: none;
+  background-color: #bdbdbd;
+  border: none;
+}
+
+/* .check-radio:active, .check-radio:checked {
+  box-shadow: none;
+  background-color: #fff;
+  border: 1px solid #9f0111;
+} */
+
+.check-radio[name="flexRadioDefault"] {
+  accent-color: #9f0111;
+  margin-left: -22px;
+}

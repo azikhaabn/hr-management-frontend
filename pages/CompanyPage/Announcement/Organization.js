@@ -1,8 +1,8 @@
 import React from "react";
-import Head from "next/head";
 import styles from "/styles/CompanyPage/Announcement/organization.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+<<<<<<< HEAD
   faMagnifyingGlass,
   faAngleRight,
   faAngleLeft,
@@ -14,6 +14,14 @@ import {
   useRowSelectColumn,
 } from "@lineup-lite/hooks";
 import { useRouter } from "next/router";
+=======
+  faMagnifyingGlass
+} from "@fortawesome/free-solid-svg-icons";
+import { useTable, useRowSelect } from "react-table";
+import {
+  useRowSelectColumn
+} from "@lineup-lite/hooks";
+>>>>>>> frontendzahra/main
 
 const Organization = ({ closeModal }) => {
   const data = React.useMemo(
@@ -73,6 +81,7 @@ const Organization = ({ closeModal }) => {
       useRowSelectColumn
     );
 
+<<<<<<< HEAD
   const {
     // getTableProps,
     // getTableBodyProps,
@@ -93,6 +102,8 @@ const Organization = ({ closeModal }) => {
   const router = useRouter();
   const currentRoute = router.pathname;
 
+=======
+>>>>>>> frontendzahra/main
   return (
     <div className={styles.container}>
       <main className={styles.main}>
@@ -112,12 +123,21 @@ const Organization = ({ closeModal }) => {
                 >
                   Showing
                 </label>
+<<<<<<< HEAD
                 <select className={`${styles.formSelect} form-select`}>
                   <option selected>10</option>
                   <option value="25">25</option>
                   <option value="50">50</option>
                   <option value="75">75</option>
                   <option value="100">100</option>
+=======
+                <select className={`${styles.formSelect} form-select`}> 
+                    <option selected>10</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="75">75</option>
+                    <option value="100">100</option>
+>>>>>>> frontendzahra/main
                 </select>
               </div>
               <div class="col-4">
@@ -182,7 +202,11 @@ const Organization = ({ closeModal }) => {
                 </div>
               </div>
             </section>
+<<<<<<< HEAD
             {/* <section class="section-paginate mt-3">
+=======
+           {/* <section class="section-paginate mt-3">
+>>>>>>> frontendzahra/main
               <div className={`container-fluid`}>
                 <div className={`${styles.rowPaginate}`}>
                   <p className={styles.textShow}>
